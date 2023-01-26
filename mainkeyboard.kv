@@ -1,0 +1,448 @@
+<BoxKeyBoard>:
+    orientation: 'vertical'
+    padding:5
+    spacing: 5
+
+    ActionBar:
+        ActionView:
+            ActionPrevious:
+                title: 'Phonetic Keyboard for Brazilian Portuguese'
+                    #on_press: app.root.current = 'menu'
+            ActionButton:
+                text: 'Sair'
+                on_press: app.stop()
+    ScrollView:
+        size_hint_y: None
+        height: 200
+        BoxLayout:
+            orientation: 'vertical'
+            id:item
+            size_hint_y:None
+            height: self.minimum_height
+
+    TextInput:
+        id: input
+        font_size: 15
+        multiline: False
+        font_name: 'DoulosSIL-Regular.ttf'
+        hint_text: 'Phonetics Transcription'
+
+    BoxLayout:
+        Button:
+            text: 'p'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            on_release: input.insert_text('p')
+        Button:
+            text: 'b'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            on_release: input.insert_text('b')
+        Button:
+            text: 't'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            on_release: input.insert_text('t')
+        Button:
+            text: 'd'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            on_release: input.insert_text('d')
+        Button:
+            text: 'k'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            on_release: input.insert_text('k')
+        Button:
+            text: 'g'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            on_release: input.insert_text('g')
+        Button:
+            text: 'kʷ'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('kʷ')
+        Button:
+            text: 'gʷ'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('gʷ')
+        Button:
+            text: 'tʃ'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('tʃ')
+        Button:
+            text: 'dʒ'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('dʒ')
+    BoxLayout:
+        Button:
+            text: 'f'
+            font_size: 16
+            bold: True
+            background_color:(224/255, 142/255, 121/255)
+            on_release: input.insert_text('f')
+        Button:
+            text: 'v'
+            font_size: 16
+            bold: True
+            background_color:(224/255, 142/255, 121/255)
+            on_release: input.insert_text('v')
+        Button:
+            text: 's'
+            font_size: 16
+            bold: True
+            background_color:(224/255, 142/255, 121/255)
+            on_release: input.insert_text('s')
+        Button:
+            text: 'z'
+            font_size: 16
+            bold: True
+            background_color:(224/255, 142/255, 121/255)
+            on_release: input.insert_text('z')
+        Button:
+            font_name: 'DoulosSIL-Regular.ttf'
+            text: 'ʃ'
+            font_size: 16
+            bold: True
+            background_color:(224/255, 142/255, 121/255)
+            on_release: input.insert_text('ʃ')
+        Button:
+            text: 'ʒ'
+            font_size: 16
+            bold: True
+            background_color:(224/255, 142/255, 121/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ʒ')
+        Button:
+            text: 'x'
+            font_size: 16
+            bold: True
+            background_color:(224/255, 142/255, 121/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('x')
+        Button:
+            font_name: 'DoulosSIL-Regular.ttf'
+            text: 'ɣ'
+            font_size: 16
+            bold: True
+            background_color:(224/255, 142/255, 121/255)
+            on_release: input.insert_text('ɣ')
+        Button:
+            text: 'h'
+            font_size: 16
+            bold: True
+            background_color:(224/255, 142/255, 121/255)
+            on_release: input.insert_text('h')
+        Button:
+            font_name: 'DoulosSIL-Regular.ttf'
+            text: 'ɦ'
+            font_size: 16
+            bold: True
+            background_color:(224/255, 142/255, 121/255)
+            on_release: input.insert_text('ɦ')
+    BoxLayout:
+        Button:
+            text: 'm'
+            font_size: 16
+            bold: True
+            background_color:(241/255, 212/255, 175/255)
+            on_release: input.insert_text('m')
+        Button:
+            text: 'n'
+            font_size: 16
+            bold: True
+            background_color:(241/255, 212/255, 175/255)
+            on_release: input.insert_text('n')
+        Button:
+            text: 'ɲ'
+            font_size: 16
+            bold: True
+            background_color:(241/255, 212/255, 175/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ɲ')
+        Button:
+            text: 'l'
+            font_size: 16
+            bold: True
+            background_color:(241/255, 212/255, 175/255)
+            on_release: input.insert_text('l')
+        Button:
+            text: 'ɫ'
+            font_size: 16
+            bold: True
+            background_color:(241/255, 212/255, 175/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ɫ')
+        Button:
+            text: 'lʲ'
+            font_size: 16
+            bold: True
+            background_color:(241/255, 212/255, 175/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('lʲ')
+        Button:
+            text: 'ʎ'
+            font_size: 16
+            bold: True
+            background_color:(241/255, 212/255, 175/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ʎ')
+        Button:
+            text: 'ɾ'
+            font_size: 16
+            bold: True
+            background_color:(241/255, 212/255, 175/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ɾ')
+        Button:
+            text: 'ɹ'
+            font_size: 16
+            bold: True
+            background_color:(241/255, 212/255, 175/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ɹ')
+        Button:
+            text: 'ř'
+            font_size: 16
+            bold: True
+            background_color:(241/255, 212/255, 175/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ř')
+#vogais
+    BoxLayout:
+        Button:
+            text: 'i'
+            font_size: 16
+            bold: True
+            background_color:(236/255, 229/255, 206/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('i')
+        Button:
+            text: 'ĩ'
+            font_size: 16
+            bold: True
+            background_color:(236/255, 229/255, 206/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ĩ')
+        Button:
+            text: 'I'
+            font_size: 16
+            bold: True
+            background_color:(236/255, 229/255, 206/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('I')
+        Button:
+            text: 'a'
+            font_size: 16
+            bold: True
+            background_color:(236/255, 229/255, 206/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('a')
+        Button:
+            text: 'ã'
+            font_size: 16
+            bold: True
+            background_color:(236/255, 229/255, 206/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ã')
+        Button:
+            text: 'ə'
+            font_size: 16
+            bold: True
+            background_color:(236/255, 229/255, 206/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ə')
+        Button:
+            text: 'u'
+            font_size: 16
+            bold: True
+            background_color:(236/255, 229/255, 206/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('u')
+        Button:
+            text: 'ũ'
+            font_size: 16
+            bold: True
+            background_color:(236/255, 229/255, 206/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ũ')
+        Button:
+            text: 'ʊ'
+            font_size: 16
+            bold: True
+            background_color:(236/255, 229/255, 206/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ʊ')
+        Button:
+            text: 'w'
+            font_size: 16
+            bold: True
+            background_color:(236/255, 229/255, 206/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('w')
+    BoxLayout:
+        Button:
+            text: 'e'
+            font_size: 16
+            bold: True
+            background_color: (197/255, 224/255, 220/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('e')
+        Button:
+            text: 'ẽ'
+            font_size: 16
+            bold: True
+            background_color: (197/255, 224/255, 220/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ẽ')
+        Button:
+            text: 'ɛ'
+            font_size: 16
+            bold: True
+            background_color: (197/255, 224/255, 220/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ɛ')
+        Button:
+            text: 'ỹ'
+            font_size: 16
+            bold: True
+            background_color: (197/255, 224/255, 220/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ỹ')
+        Button:
+            text: 'o'
+            font_size: 16
+            bold: True
+            background_color: (197/255, 224/255, 220/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('o')
+        Button:
+            text: 'õ'
+            font_size: 16
+            bold: True
+            background_color: (197/255, 224/255, 220/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('õ')
+        Button:
+            text: 'ɔ'
+            font_size: 16
+            bold: True
+            background_color: (197/255, 224/255, 220/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ɔ')
+        Button:
+            text: '.'
+            font_size: 16
+            bold: True
+            background_color: (197/255, 224/255, 220/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('.')
+    BoxLayout:
+        Button:
+            text: 'ˈ'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ˈ')
+        Button:
+            text: 'ˌ'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ˌ')
+        Button:
+            text: '∅'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('∅')
+        Button:
+            text: '|'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('|')
+        Button:
+            text: '‖'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('‖')
+        Button:
+            text: '→'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('→')
+        Button:
+            text: '↘'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('↘')
+        Button:
+            text: '↗'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('↗')
+        Button:
+            text: '͜'
+            font_size: 16
+            bold: True
+            background_color:(119/255,79/255,56/255)
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('͜')
+    BoxLayout:
+        Button:
+            text: 'Add item '
+            font_size: 20
+            bold: True
+            background_color:(224/255, 142/255, 121/255)
+            on_press: app.root.additem()
+        Button:
+            text: 'Back space'
+            font_size: 20
+            bold: True
+            background_color:(224/255, 142/255, 121/255)
+            on_press: app.root.clear()
+
+<ItemsInput>:
+    size_hint_y: None
+    height:50
+    Label:
+        id: label
+        size_hint_y: None
+        height:50
+        font_name:'DoulosSIL-Regular.ttf'
+    Button:
+        text: 'X'
+        size_hint_x: None
+        width: 50
+        on_press: app.root.ids.item.remove_widget(root) #app.root.ids.item.remove_widget(root)

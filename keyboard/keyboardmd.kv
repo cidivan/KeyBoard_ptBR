@@ -1,0 +1,445 @@
+<BoxKeyBoard>:
+    orientation: 'vertical'
+    padding:10
+    spacing: 10
+
+    MDTopAppBar:
+        title: "Phonetic Keyboard pt-BR"
+        right_action_items: [["menu", lambda x: root.about(x)]]
+        mode: "free-end"
+
+    MDScrollView:
+        size_hint_y: None
+        height: 200
+        MDBoxLayout:
+            orientation: 'vertical'
+            id:item
+            size_hint_y:None
+            height: self.minimum_height
+
+    MDTextField:
+        id: input
+        font_size: 15
+        multiline: False
+        font_name: 'DoulosSIL-Regular.ttf'
+        hint_text: 'Phonetics Transcription'
+
+    MDBoxLayout:
+        MDFillRoundFlatButton:
+            text: 'p'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('p')
+        MDFillRoundFlatButton:
+            text: 'b'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('b')
+        MDFillRoundFlatButton:
+            text: 't'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('t')
+        MDFillRoundFlatButton:
+            text: 'd'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('d')
+        MDFillRoundFlatButton:
+            text: 'k'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('k')
+        MDFillRoundFlatButton:
+            text: 'g'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('g')
+        MDFillRoundFlatButton:
+            text: 'kʷ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('kʷ')
+        MDFillRoundFlatButton:
+            text: 'gʷ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('gʷ')
+        MDFillRoundFlatButton:
+            text: 'tʃ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('tʃ')
+        MDFillRoundFlatButton:
+            text: 'dʒ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('dʒ')
+    MDBoxLayout:
+        MDFillRoundFlatButton:
+            text: 'f'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('f')
+        MDFillRoundFlatButton:
+            text: 'v'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('v')
+        MDFillRoundFlatButton:
+            text: 's'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('s')
+        MDFillRoundFlatButton:
+            text: 'z'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('z')
+        MDFillRoundFlatButton:
+            font_name: 'DoulosSIL-Regular.ttf'
+            text: 'ʃ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('ʃ')
+        MDFillRoundFlatButton:
+            text: 'ʒ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ʒ')
+        MDFillRoundFlatButton:
+            text: 'x'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('x')
+        MDFillRoundFlatButton:
+            font_name: 'DoulosSIL-Regular.ttf'
+            text: 'ɣ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('ɣ')
+        MDFillRoundFlatButton:
+            text: 'h'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('h')
+        MDFillRoundFlatButton:
+            font_name: 'DoulosSIL-Regular.ttf'
+            text: 'ɦ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('ɦ')
+    MDBoxLayout:
+        MDFillRoundFlatButton:
+            text: 'm'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('m')
+        MDFillRoundFlatButton:
+            text: 'n'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('n')
+        MDFillRoundFlatButton:
+            text: 'ɲ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ɲ')
+        MDFillRoundFlatButton:
+            text: 'l'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_release: input.insert_text('l')
+        MDFillRoundFlatButton:
+            text: 'ɫ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ɫ')
+        MDFillRoundFlatButton:
+            text: 'lʲ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('lʲ')
+        MDFillRoundFlatButton:
+            text: 'ʎ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ʎ')
+        MDFillRoundFlatButton:
+            text: 'ɾ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ɾ')
+        MDFillRoundFlatButton:
+            text: 'ɹ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ɹ')
+        MDFillRoundFlatButton:
+            text: 'ř'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ř')
+#vogais
+    MDBoxLayout:
+        MDFillRoundFlatButton:
+            text: 'i'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('i')
+        MDFillRoundFlatButton:
+            text: 'ĩ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ĩ')
+        MDFillRoundFlatButton:
+            text: 'I'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('I')
+        MDFillRoundFlatButton:
+            text: 'a'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('a')
+        MDFillRoundFlatButton:
+            text: 'ã'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ã')
+        MDFillRoundFlatButton:
+            text: 'ə'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ə')
+        MDFillRoundFlatButton:
+            text: 'u'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('u')
+        MDFillRoundFlatButton:
+            text: 'ũ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ũ')
+        MDFillRoundFlatButton:
+            text: 'ʊ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ʊ')
+        MDFillRoundFlatButton:
+            text: 'w'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('w')
+    MDBoxLayout:
+        MDFillRoundFlatButton:
+            text: 'e'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('e')
+        MDFillRoundFlatButton:
+            text: 'ẽ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ẽ')
+        MDFillRoundFlatButton:
+            text: 'ɛ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ɛ')
+        MDFillRoundFlatButton:
+            text: 'ỹ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ỹ')
+        MDFillRoundFlatButton:
+            text: 'o'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('o')
+        MDFillRoundFlatButton:
+            text: 'õ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('õ')
+        MDFillRoundFlatButton:
+            text: 'ɔ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ɔ')
+        MDFillRoundFlatButton:
+            text: '.'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('.')
+    MDBoxLayout:
+        MDFillRoundFlatButton:
+            text: 'ˈ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ˈ')
+        MDFillRoundFlatButton:
+            text: 'ˌ'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('ˌ')
+        MDFillRoundFlatButton:
+            text: '∅'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('∅')
+        MDFillRoundFlatButton:
+            text: '|'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('|')
+        MDFillRoundFlatButton:
+            text: '‖'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('‖')
+        MDFillRoundFlatButton:
+            text: '→'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('→')
+        MDFillRoundFlatButton:
+            text: '↘'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('↘')
+        MDFillRoundFlatButton:
+            text: '↗'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('↗')
+        MDFillRoundFlatButton:
+            text: '͜'
+            font_size: 16
+            theme_text_color: "Custom"
+            line_color: "orange"
+            font_name: 'DoulosSIL-Regular.ttf'
+            on_release: input.insert_text('͜')
+    MDBoxLayout:
+        MDFillRoundFlatButton:
+            text: 'Add item '
+            font_size: 20
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_press: app.root.additem()
+        MDFillRoundFlatButton:
+            text: 'Back space'
+            font_size: 20
+            theme_text_color: "Custom"
+            line_color: "orange"
+            on_press: app.root.clear()
+
+<ItemsInput>:
+    size_hint_y: None
+    height:50
+    MDLabel:
+        id: label
+        size_hint_y: None
+        height:50
+        font_name:'DoulosSIL-Regular.ttf'
+    MDFillRoundFlatButton:
+        text: 'X'
+        size_hint_x: None
+        width: 50
+        on_press: app.root.ids.item.remove_widget(root) #app.root.ids.item.remove_widget(root)
